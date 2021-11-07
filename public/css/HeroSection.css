@@ -1,0 +1,13 @@
+#HeroSection-wrapper {
+    background-image: linear-gradient(#000000a6, #000000a6),
+        url("../images/Hero-banner.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+#HeroSection-wrapper div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}

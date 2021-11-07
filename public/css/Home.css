@@ -1,0 +1,189 @@
+nav#user-nav {
+    margin-left: 18%;
+    background-color: var(--default-background);
+    border-bottom: 1px solid #f3f3f3;
+}
+nav#user-sm-nav {
+    background-color: var(--default-background);
+    border-bottom: 1px solid #f3f3f3;
+}
+nav#user-nav .user-nav-list {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+}
+
+nav#user-nav .user-nav-list li {
+    padding-left: 10px;
+}
+
+nav#user-nav .user-nav-list .nav-form {
+    width: 90%;
+}
+
+nav#user-nav .user-nav-list .nav-form #search-holder input#search {
+    width: 100%;
+    background: var(--default-background);
+    letter-spacing: 1.5px;
+}
+
+nav#user-nav .user-nav-list .nav-form #search-holder input#search:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cecece;
+}
+
+.user-profile-img img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+nav#instructor-nav {
+    margin-left: 18%;
+    background-color: var(--default-background);
+    border-bottom: 1px solid #f3f3f3;
+}
+
+nav#instructor-nav .instructor-nav-list {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+}
+
+nav#instructor-nav .instructor-nav-list li {
+    padding-left: 10px;
+}
+
+nav#instructor-nav .instructor-nav-list .nav-form {
+    width: 85%;
+}
+
+nav#instructor-nav .instructor-nav-list .nav-form #search-holder input#search {
+    width: 100%;
+    background: var(--default-background);
+    letter-spacing: 1.5px;
+}
+
+nav#instructor-nav
+    .instructor-nav-list
+    .nav-form
+    #search-holder
+    input#search:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cecece;
+}
+
+.instructor-profile-img img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+aside {
+    background: var(--dark-background);
+    color: #fff;
+    width: 18%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+aside #path-holder ul li a:hover {
+    background: rgba(31, 41, 55, 1);
+}
+
+.active {
+    background: var(--primary-color);
+}
+.active a:hover {
+    background: var(--primary-color) !important;
+}
+
+#user-brand-logo {
+    background: var(--default-background);
+    border-right: 1px solid #cecece;
+}
+
+.account {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+}
+
+#user-main-body {
+    margin-left: 18%;
+}
+
+.nothing-found {
+    padding-top: 20rem;
+}
+
+.no-course {
+    width: 25%;
+    margin: 2rem auto;
+}
+
+.no-course div {
+    width: 100%;
+}
+.no-course div img {
+    width: 100%;
+    height: 400px;
+}
+
+@media screen and (max-width: 640px) {
+    #user-main-body {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #user-main-body {
+        margin-left: 0px;
+    }
+}
+
+/* mobile navigation */
+
+#userMobileSideNav,
+#instructorMobileSideNav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #fff;
+    width: 80%;
+    height: 100vh;
+}
+
+#userMobileSideNav ul li,
+#instructorMobileSideNav ul li {
+    padding: 10px 0px 10px 0px;
+}
+
+.mobileLogotBtn {
+    position: absolute;
+    bottom: 52px;
+}
+
+nav form input#search {
+    width: 100%;
+    background: var(--default-background);
+    border-radius: 3px;
+    letter-spacing: 1.5px;
+}
+
+#closeUserNav {
+    display: none;
+}
+
+#closeInstructorNav {
+    display: none;
+}

@@ -1,0 +1,15 @@
+.Pricing-container {
+    background: var(--body-background);
+    height: auto;
+}
+
+.Pricing-box {
+    background: #fff;
+}
+
+.Pricing-box:hover {
+    display: block;
+    background: var(--dark-background);
+    color: #fff;
+    transform: scale(1.1);
+}

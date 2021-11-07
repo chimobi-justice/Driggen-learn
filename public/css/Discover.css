@@ -1,0 +1,12 @@
+.aside-right {
+    position: sticky;
+    top: 20px;
+    background: var(--default-background);
+}
+.discover-play {
+    height: auto;
+}
+
+.discover-play video {
+    width: 10%;
+}

@@ -1,0 +1,10 @@
+#details-container {
+    background: #fffcfc;
+    height: auto;
+    padding: 4rem 0rem 4rem 0rem;
+}
+
+#details-container div div img {
+    width: 100%;
+    height: 350px;
+}

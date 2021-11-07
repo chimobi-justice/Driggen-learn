@@ -1,0 +1,9 @@
+.Team-container {
+    background: var(--body-background);
+    height: auto;
+}
+
+.Team-img {
+    width: 100%;
+    height: 250px;
+}

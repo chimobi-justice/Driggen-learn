@@ -1,0 +1,26 @@
+#Footer-wrapper {
+    background: var(--dark-background);
+    height: auto;
+    bottom: 0;
+}
+
+.footer-brand-logo {
+    color: var(--primary-background-color);
+}
+
+.footer-heading-title {
+    color: #fff;
+}
+
+#Footer-wrapper > .footer-container {
+    border-bottom: 1px solid #fff;
+}
+
+#Footer-wrapper > .footer-container > div div {
+    padding: 10px;
+}
+
+#Footer-wrapper > .footer-container > div div > p {
+    color: #fff;
+    line-height: 1.7em;
+}
