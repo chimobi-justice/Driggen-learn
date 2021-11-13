@@ -29,9 +29,12 @@
       @endif      
     </div>
     @else
-      <div class="pt-14  pb-20 w-11/12 m-auto">
-        Nothing found with that search.
-      </div>
+      <div class="flex justify-center items-center no-course">
+          <div>
+            <img src="{{ asset('images/empty.svg') }}" alt="Preview course">
+            <p class="text-center text-gray-500"> Nothing found with that search.</p>
+          </div>
+      </div> 
     @endif
   </div>
 @endsection
