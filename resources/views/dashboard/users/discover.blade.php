@@ -33,7 +33,7 @@
     @else
         <div class="flex justify-center items-center no-course">
           <div>
-            <img src="{{ asset('images/empty.svg') }}" alt="empty courses">
+            <img src="{{ asset('images/empty.svg') }}" alt="Preview course">
             <p class="text-center text-gray-500">No courses yet, course 'll appear here</p>
           </div>
       </div> 

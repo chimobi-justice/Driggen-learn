@@ -25,6 +25,11 @@
     background: var(--secondary-background-color);
 }
 
+.login-button {
+    border: 1px solid #000;
+    color: #000;
+}
+
 .heading-color {
     color: var(--primary-color);
 }
@@ -84,7 +89,7 @@
     justify-content: center;
 }
 #loader img {
-    width: 10%;
+    width: 15%;
     height: 50px;
 }
 
@@ -131,10 +136,17 @@
     }
 }
 
+@media screen and (max-width: 640px) {
+    #loader img {
+        width: 60%;
+        height: 50px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     #loader img {
-        width: 45%;
-        height: 50px;
+        width: 60%;
+        height: 70px;
     }
 }
 
@@ -148,10 +160,11 @@
     background: #fff;
     width: 80%;
     height: 100vh;
+    z-index: 1;
 }
 
 #mobileSideNav ul li {
-    padding: 10px 0px 10px 0px;
+    padding: 8px 0px 8px 0px;
 }
 
 .toggleNav {

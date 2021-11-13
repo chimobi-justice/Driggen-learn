@@ -21,7 +21,10 @@
     <li><a href="our-team" class="p-3">Team</a></li>
     <li><a href=" {{ route('pricing') }}" class="p-3">Pricing</a></li>
     <li><a href="contact-us" class="p-3">Contact Us</a></li>
-    <li><a href="{{ route('register') }}" class="p-2 rounded-sm text-white 
+    <li><a href="{{ route('login') }}" class="p-2 m-2 mb-0 rounded-sm text-white 
+      text-sm text-center login-button block">Sign In</a>
+    </li>
+    <li><a href="{{ route('register') }}" class="p-2 m-2 rounded-sm text-white 
       text-sm text-center Button block">Sign Up</a>
     </li>
   </ul>

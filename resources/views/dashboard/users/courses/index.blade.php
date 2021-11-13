@@ -27,7 +27,7 @@
     @else
       <div class="flex justify-center items-center no-course">
           <div>
-            <img src="{{ asset('images/empty.svg') }}" alt="empty courses">
+            <img src="{{ asset('images/empty.svg') }}" alt="Preview courses">
             <p class="text-center text-gray-500">courses you Enrolled appear here</p>
           </div>
       </div>  
