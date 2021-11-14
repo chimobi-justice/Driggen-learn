@@ -142,11 +142,25 @@ aside #path-holder ul li a:hover {
     #user-main-body {
         margin-left: 0px;
     }
+    .user-profile-img img {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .no-course {
+        width: 75%;
+        margin: 2rem auto;
+    }
 }
 
 @media screen and (max-width: 800px) {
     #user-main-body {
         margin-left: 0px;
+    }
+
+    .no-course {
+        width: 85%;
+        margin: 2rem auto;
     }
 }
 
@@ -161,6 +175,7 @@ aside #path-holder ul li a:hover {
     background: #fff;
     width: 80%;
     height: 100vh;
+    z-index: 1;
 }
 
 #userMobileSideNav ul li,

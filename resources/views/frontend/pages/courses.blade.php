@@ -13,7 +13,7 @@
           @foreach($courses as $course)
               <div class="border-2 rounded-xl courses-box">
                 <a href="{{ route('login') }}" class="block">
-                  <img src="{{ asset('imageCover/'. $course->coverImage) }}" alt="" 
+                  <img src="{{ asset('imageCover/'. $course->coverImage) }}" alt="Preview course" 
                     class="rounded-lg course-img">
                   <div class="tag flex justify-between p-4 items-center">
                     <p class="bg-gray-200 p-2 pr-3 pl-3 text-xs rounded-lg tag-text">

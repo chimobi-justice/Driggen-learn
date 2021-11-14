@@ -85,13 +85,13 @@
 
             <div class="pb-3">
               <button class="px-2 py-2 md:px-4 md:py-4 lg:px-2 lg:py-2 text-center 
-              rounded-lg text-white text-sm font-medium Button w-full"
+              rounded-lg text-white text-sm font-medium Button w-full" id="signUp"
               >
                 Create Account
               </button>
             </div>
 
-            <p class="mt-1 mb-1 text-sm font-semibold text-gray-500">
+            <p class="mt-1 mb-1 text-sm text-center font-semibold text-gray-500">
               Already have an account?
               <a href="{{ route('login') }}" class="hover:underline">
                 log In

@@ -22,7 +22,7 @@
         <p class="text-sm pb-1"><a href=" {{ route('courses') }} ">Courses</a></p>
         <p class="text-sm pb-1"><a href="our-team">Team</a></p>
         <p class="text-sm pb-1"><a href=" {{ route('pricing') }} ">Pricing</a></p>
-        <p class="text-sm"><a href="{{ route('instructor.register') }}">Teach on Driggen learn</a></p>
+        <p class="text-sm"><a href="{{ route('instructor.register') }}">Become an Instructor</a></p>
       </div>
     </div>
     <div class="p-1">
