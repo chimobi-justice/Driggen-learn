@@ -75,7 +75,7 @@
                                     <div class="pr-2"><img src="{{ asset('images/avatar.jpeg') }}"
                                       alt="" class="w-9"></div>
                                   @else
-                                    <div class="pr-2"><img src="{{ asset('profiles/' . $comment->user->avatar ) }}" 
+                                    <div class="pr-2"><img src="{{ $comment->user->avatar }}" 
                                     alt="" class="w-9"></div>
                                   @endif
                                   <p class="text-sm text-gray-500">{{ $comment->user->firstname }}</p>
