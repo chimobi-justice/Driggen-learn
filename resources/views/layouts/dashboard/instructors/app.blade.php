@@ -132,5 +132,7 @@
   <script src="{{ asset('js/loader.js') }}"></script>
   <script src="{{ asset('js/nav/instructNav.js') }}"></script>
 
+  <script src="{{ asset('js/handleDeleteModal.js') }}"></script>
+
 </body>
 </html>

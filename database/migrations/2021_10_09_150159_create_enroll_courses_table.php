@@ -15,8 +15,8 @@ class CreateEnrollCoursesTable extends Migration
     {
         Schema::create('enroll_courses', function (Blueprint $table) {
             $table->uuid('id')->unique();
-            $table->uuid('course_id')->contrained()->onDelete('cascade');
-            $table->uuid('user_id')->contrained()->onDelete('cascade');
+            $table->foreignUuid('course_id')->contrained()->onDelete('cascade');
+            $table->foreignUuid('user_id')->contrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

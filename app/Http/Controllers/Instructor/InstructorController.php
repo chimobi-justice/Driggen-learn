@@ -102,7 +102,8 @@ class InstructorController extends Controller
     {
         $this->validate($request, [
             'fullname' => 'required|max:255',
-            'avatar' => 'required|mimes:jpg,jpeg,png|max:5048',
+            'email' => 'required|max:255',
+            'avatar' => 'mimes:jpg,jpeg,png|max:5048',
         ]);
 
 
@@ -112,7 +113,7 @@ class InstructorController extends Controller
 
         auth()->user()->update([
             'fullname' => $request->fullname,
-            'email' => auth()->user()->email,
+            'email' => $request->email,
             'avatar' => $newImageName
         ]);
 

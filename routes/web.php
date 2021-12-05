@@ -22,6 +22,8 @@ use App\Http\Controllers\Users\UserAllCourse;
 use App\Http\Controllers\Users\SettingsController;
 use App\Http\Controllers\Users\UserSearchController;
 use App\Http\Controllers\Instructor\InstructorSearchController;
+use App\Http\Controllers\Instructor\InstructorDeleteController;
+use App\Http\Controllers\Users\UserDeleteController;
 
 
 /*
@@ -122,6 +124,10 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('instructor/q/', [InstructorSearchController::class, 'search'])
         ->name('instructor.search');  
 
+
+    Route::delete('/instructor/account/destroy', [InstructorDeleteController::class, 'destroy'])
+    ->name('instructor.account.destroy');
+
   });
 
   Route::group([
@@ -163,6 +169,9 @@ Route::group(['middleware' => 'auth'], function() {
     
     Route::get('user/q/', [UserSearchController::class, 'search'])
         ->name('user.search');  
+
+    Route::delete('/user/account/destroy', [UserDeleteController::class, 'destroy'])
+        ->name('users.account.destroy');
         
   });
 

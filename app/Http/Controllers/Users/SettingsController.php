@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Users;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use App\Models\User;
 
 class SettingsController extends Controller
 {
@@ -18,18 +17,15 @@ class SettingsController extends Controller
         return view('dashboard.users.settings');
     }
 
-    public function store(Request $request, User $user)
+    public function store(Request $request)
     {
         $this->validate($request, [
-            'fullname' => 'required|max:255',
             'current_password' => 'required|current_password',
-            'new_password' => 'required',
+            'password' => 'required|confirmed',
         ]);
 
         auth()->user()->update([
-            'fullname' => $request->fullname,
-            'email' => auth()->user()->email,
-            'password' => Hash::make($request->new_password),
+            'password' => Hash::make($request->password),
         ]);
 
         return back()->with('status', 'updated successfully');
