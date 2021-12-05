@@ -3,6 +3,7 @@
 }
 #profile-form-wrapper {
     padding-top: 6rem;
+    padding-bottom: 3rem;
 }
 #avatar {
     display: none;
@@ -24,8 +25,26 @@
     cursor: pointer;
 }
 
+#accountPermanentlyDeleteBox {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+    display: none;
+}
+
 @media screen and (max-width: 640px) {
     #profile-form-wrapper {
         padding-top: 3rem;
+    }
+
+    #accountPermanentlyDeleteBox {
+        width: 90%;
+        left: 5%;
+        right: 5%;
     }
 }

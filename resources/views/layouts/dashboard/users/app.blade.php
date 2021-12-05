@@ -134,6 +134,8 @@
   <script src="{{ asset('js/mobileNav/handleUserNav.js') }}"></script>
   <script src="{{ asset('js/loader.js') }}"></script>
   <script src="{{ asset('js/nav/userNav.js') }}"></script>
+  
+  <script src="{{ asset('js/handleDeleteModal.js') }}"></script>
 
 </body>
 </html>

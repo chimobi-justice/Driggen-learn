@@ -15,7 +15,7 @@ class CreateCoursesTable extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->uuid('id')->unique();
-            $table->uuid('user_id')->contrained()->onDelete('cascade');
+            $table->foreignUuid('user_id')->contrained()->onDelete('cascade');
             $table->string('videoUrl');
             $table->string('title');
             $table->string('category');
