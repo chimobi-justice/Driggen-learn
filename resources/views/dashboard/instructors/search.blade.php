@@ -10,7 +10,7 @@
           @foreach($courses as $course)
               <div class="border-2 rounded-xl courses-box">
                 <a href="{{ route('dashboard.instructors.course', $course->id) }}" class="block">
-                  <img src="{{ asset('imageCover/'. $course->coverImage) }}" alt="" 
+                  <img src="{{ $course->coverImage }}" alt="" 
                     class="rounded-lg course-img">
                   <div class="flex justify-between p-4 items-center">
                     <p class="bg-gray-200 p-2 pr-3 pl-3 text-xs rounded-lg tag-text">

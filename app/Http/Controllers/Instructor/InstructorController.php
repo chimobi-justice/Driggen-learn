@@ -56,9 +56,7 @@ class InstructorController extends Controller
 
         $videoId = explode('=', $request->videoUrl);
      
-        $newImageName = time() . '-' . $request->cover_image->getClientOriginalName();
-
-        $request->cover_image->move(public_path('imageCover'), $newImageName);
+        $newImageName = cloudinary()->upload($request->file('cover_image')->getRealPath())->getSecurePath();
 
         $request->user()->course()->create([
             'videoUrl' => 'https://www.youtube.com/embed/'. $videoId[1], 
@@ -106,10 +104,7 @@ class InstructorController extends Controller
             'avatar' => 'mimes:jpg,jpeg,png|max:5048',
         ]);
 
-
-        $newImageName = time() . '-' . $request->avatar->getClientOriginalName();
-
-        $request->avatar->move(public_path('profiles'), $newImageName);
+        $newImageName = cloudinary()->upload($request->file('avatar')->getRealPath())->getSecurePath();
 
         auth()->user()->update([
             'fullname' => $request->fullname,

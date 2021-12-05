@@ -48,7 +48,7 @@
           @if(!auth()->user()->avatar)
             <div class="pr-2"><img src="{{ asset('images/avatar.jpeg') }}" alt=""></div>
           @else
-            <div class="pr-2"><img src="{{ asset('profiles/' . auth()->user()->avatar) }}" alt=""></div>
+            <div class="pr-2"><img src="{{ auth()->user()->avatar }}" alt=""></div>
           @endif
           <div>{{ auth()->user()->firstname }}</div> 
       </li>
@@ -72,11 +72,15 @@
           class="w-full p-1">
       </form> 
       <div class="user-profile-img  flex items-center">
-        @if(!auth()->user()->avatar)
-          <div class="pr-2"><img src="{{ asset('images/avatar.jpeg') }}" alt=""></div>
-        @else
-          <div class="pr-2"><img src="{{ asset('profiles/' . auth()->user()->avatar) }}" alt=""></div>
-        @endif
+         @if(!auth()->user()->avatar)
+            <div class="pr-2"><img src="{{ asset('images/avatar.jpeg') }}" alt=""></div>
+          @else
+            @if (!auth()->user()->provider_id)
+              <div class="pr-2"><img src="{{ auth()->user()->avatar }}" alt=""></div>
+            @else 
+              <div class="pr-2"><img src="{{ auth()->user()->avatar }}" alt=""></div>
+            @endif
+          @endif
       </div>
     </nav>
 

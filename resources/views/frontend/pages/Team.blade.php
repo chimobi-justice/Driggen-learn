@@ -4,11 +4,7 @@
   <div class="Team-container">
     <div class="Team-holder-box pt-20  pb-20 w-4/5 m-auto">
       <div class="Team-content text-center pb-10">
-        <h2 class="heading-color pb-2 text-xl">Our Team</h2>
-        <h3 class="text-3xl pb-2">The best tutors in town</h2>
-        <p class="text-sm md:text-xl lg:text-sm text-gray-500 text-light leading-6 pb-3">
-          Tutors that teach and instruct student to learn in advance
-        </p>
+        <h2 class="heading-color pb-2 text-2xl">Our Teams</h2>
       </div>
 
 

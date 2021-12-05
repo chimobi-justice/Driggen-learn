@@ -23,10 +23,7 @@ class AccountController extends Controller
             'avatar' => 'required|mimes:jpg,jpeg,png|max:5048',
         ]);
 
-
-        $newImageName = time() . '-' . $request->avatar->getClientOriginalName();
-
-        $request->avatar->move(public_path('profiles'), $newImageName);
+        $newImageName = cloudinary()->upload($request->file('avatar')->getRealPath())->getSecurePath();
 
         auth()->user()->update([
             'fullname' => $request->fullname,
